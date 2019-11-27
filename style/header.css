@@ -1,0 +1,134 @@
+/* line 1, header.scss */
+.header {
+  width: 100%;
+  height: 90px;
+  background-color: #000; }
+  /* line 6, header.scss */
+  .header .header__nav {
+    height: 100%;
+    width: 100%; }
+  /* line 11, header.scss */
+  .header .header__nav-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 90px;
+    grid-template-areas: "nav1 . nav2";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30px;
+    list-style-type: none;
+    cursor: pointer; }
+    /* line 25, header.scss */
+    .header .header__nav-list .header__nav-item1 {
+      grid-area: nav1;
+      color: #fff; }
+    /* line 30, header.scss */
+    .header .header__nav-list .header__nav-logo {
+      padding: 0px 6px 0px 5px;
+      border-radius: 3px;
+      background-color: #4a90e2; }
+    /* line 36, header.scss */
+    .header .header__nav-list .header__nav-item2 {
+      grid-area: nav2; }
+    /* line 40, header.scss */
+    .header .header__nav-list .header__nav-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      list-style-type: none; }
+    /* line 46, header.scss */
+    .header .header__nav-list .header__menu-item a {
+      padding: 0 3px 0 3px;
+      text-decoration: none;
+      color: #fff; }
+    /* line 52, header.scss */
+    .header .header__nav-list a:focus {
+      padding: 0 3px 0 3px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #000; }
+    /* line 58, header.scss */
+    .header .header__nav-list a:hover {
+      padding: 0 3px 0 3px;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      background-color: #000; }
+    /* line 64, header.scss */
+    .header .header__nav-list a:active {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      font-weight: bold;
+      background-color: #000; }
+
+@media all and (max-width: 1024px) {
+  /* line 76, header.scss */
+  .header {
+    width: 100%;
+    height: 90px;
+    background-color: #000; }
+    /* line 81, header.scss */
+    .header .header__nav {
+      height: 100%;
+      width: 100%; }
+    /* line 86, header.scss */
+    .header .header__nav-list {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 370px);
+      grid-template-rows: 90px;
+      grid-template-areas: "nav1 nav2";
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      grid-gap: 30px;
+      list-style-type: none; } }
+@media all and (max-width: 768px) {
+  /* line 105, header.scss */
+  .header {
+    width: 100%;
+    height: 90px;
+    background-color: #000; }
+    /* line 110, header.scss */
+    .header .header__nav {
+      height: 100%;
+      width: 100%; }
+    /* line 115, header.scss */
+    .header .header__nav-list {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(1, 370px);
+      grid-template-rows: 90px;
+      grid-template-areas: "nav1";
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      grid-gap: 30px;
+      list-style-type: none; }
+    /* line 130, header.scss */
+    .header .header__sub-menu {
+      position: relative;
+      bottom: 64px;
+      margin-left: 92%;
+      cursor: pointer; }
+      /* line 136, header.scss */
+      .header .header__sub-menu .sub-menu {
+        margin: 6px 0;
+        width: 35px;
+        height: 5px;
+        background-color: #fff; } }
